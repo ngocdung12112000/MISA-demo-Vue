@@ -1,0 +1,194 @@
+.dialog{
+    
+}
+
+.dialog .model{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background-color: #000000;
+    opacity:.4;
+}
+
+    .dialog .dialog-content {
+        padding: 24px;
+        position: fixed;
+        top: calc(50% - 265px);
+        left: calc(50% - 300px);
+        width: 600px;
+        height: 530px;
+        border-radius: 4px;
+        background-color: #ffffff;
+    }
+
+    .dialog .dialog-title{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .dialog .dialog-close-button {
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 0 4px 0 4px;
+    }
+
+    .dialog .dialog-close-button:hover{
+        background-color:#bbb;
+        cursor: pointer;
+    }
+
+    .dialog .dialog-body {
+        height: calc(100% - 60px);
+    }  
+
+    .dialog .section-top {
+        margin-top: 16px;
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+    }
+
+    .dialog .user-image {
+        width: 33%;
+        text-align: center;
+        color: #515252;
+    }
+
+        .dialog .user-image > img {
+            border: 1px solid #bbb;
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+        }
+
+        .dialog .user-image > p {
+            padding: 0;
+            margin-top: 5px;
+        }
+
+    .dialog .user-id-and-dob {
+        display: flex;
+        flex-direction: column;
+        width: 33%; 
+        color: #515252;
+    }
+
+    .dialog .user-name-and-gender {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        color: #515252;
+    }
+
+        .dialog .user-name-and-gender .customer-select{
+            width: calc(100% - 8px);
+            height: 44px;
+            margin-bottom: 10px;
+            margin-top: 4px;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .dialog .user-name-and-gender .gender-choices{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            height: 38px;
+        }
+
+        .dialog .user-name-and-gender .gender-choices input{
+            width: 20px;
+            height: 20px;
+            margin: 0;
+        }
+
+        .dialog .user-name-and-gender .gender-choices label{
+            margin-left: -10px;
+        }
+
+        .dialog .section-top .user-name-and-gender > input,
+        .dialog .section-top .user-id-and-dob > input {
+            width: 93%;
+            margin-bottom: 10px;
+            margin-top: 4px;
+        }
+    
+    .dialog .section-bottom {
+        display: flex;
+    }
+    
+        .dialog .section-bottom .user-email-and-company {
+            width: 66.67%;
+            margin-right: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+
+            .dialog .section-bottom .user-email-and-company input{
+                width: 97%;
+                margin-bottom: 10px;
+                margin-top: 4px;
+            }
+
+        .dialog .section-bottom .user-phone-and-tax {
+            width: 33.33%;
+            margin-left: 2px;
+            display: flex;
+            flex-direction: column;
+        }
+
+            .dialog .section-bottom .user-phone-and-tax input{
+                width: 93%;
+                margin-bottom: 10px;
+                margin-top: 4px;
+            }
+    
+        .dialog .user-address {
+            width: 100%;
+        }
+
+            .dialog .user-address input{
+                width: 98%;
+                margin-bottom: 10px;
+                margin-top: 4px;
+            }
+    
+    .dialog .dialog-footer {
+        width: calc(100%);
+        background-color: #e5e5e5;
+        height: 60px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        margin-left: -24px;
+    }
+
+        .dialog .dialog-footer .save-btn {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .dialog .dialog-footer .update-btn {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .dialog .dialog-footer .cancel-btn {
+            background-color: transparent;
+            color: #000
+        }
+
+        .dialog .dialog-footer .cancel-btn:hover {
+            background-color: #bbb;
+        }

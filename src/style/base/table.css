@@ -1,0 +1,31 @@
+table {
+    border-collapse: collapse;
+}
+
+table tr{
+    border-bottom: 1px solid #bbb;
+    height: 48px;
+    user-select: none;
+}
+
+table tbody tr:hover {
+    background-color: #dedede;
+    cursor: pointer;
+}
+
+table thead th{
+    text-align: left;
+}
+
+th,td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+th:first-child, th:last-child, td:first-child, td:last-child{
+    padding-left: 16px;
+}
+
+td:nth-child(8) {
+    text-align: right;
+}
